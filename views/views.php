@@ -7,9 +7,9 @@
     <body>	
         <div class="container">
             <h1>Journal Entry</h1>   
-                <p>Name: <?= htmlspecialchars($name) ?></p>
-                <p>Date: <?= htmlspecialchars($currentDate) ?></p>
-                <p>Entry: <?= htmlspecialchars($entry) ?></p>
+                <p>Name: <?php echo htmlspecialchars($user->getName()) ?></p>
+                <p>Date: <?php echo htmlspecialchars($journal->getCurrentDate()) ?></p>
+                <p>Entry: <?php echo htmlspecialchars($journal->getEntry()) ?></p>
         </div>
     </body>	
 </html>	

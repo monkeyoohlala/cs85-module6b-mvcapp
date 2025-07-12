@@ -7,6 +7,8 @@ use App\Models\Journals;
 
 class Controller {
     public function showJournalEntry () {
-        $journalEntry = new Journals("harold", "TEST");
+        $user = new Users("Harold");
+        $journal = new Journals(getCurrentDate(), "Testing");
+        include __DIR__ . '/../../views/views.php';
     }
 }

@@ -4,7 +4,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Hongh\\Module6aMvcProject\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [

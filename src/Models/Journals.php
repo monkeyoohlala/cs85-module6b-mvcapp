@@ -7,8 +7,8 @@ class Journals {
     private $entry;
 
     public function __construct($currentDate, $entry) {
+        $this->currentDate = $this->getcurrentDate();
         $this->entry = $entry;
-        $this->currentDate = $currentDate;
     }
 
     public function getEntry() {
@@ -20,7 +20,14 @@ class Journals {
         return "Date: " . date("F-d-Y") . "<br>";
     }
 
-    public function addEntry() {
-        return $this->entry;   
-    }
+    // public function addEntry() {
+    //     return $this->entry;   
+    // }
+    
+    // public function getFullEntry() {
+    //     return [
+    //         'date' => $this->currentDate,
+    //         'entry' => $this->entry
+    //     ];
+    // }
 }
