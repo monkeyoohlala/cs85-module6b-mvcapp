@@ -1,0 +1,16 @@
+{
+    "name": "hongh/module6a_mvc_project",
+    "description": "project for php class CS85",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Hongh\\Module6aMvcProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "harold hong"
+        }
+    ],
+    "require": {}
+}
