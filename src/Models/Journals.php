@@ -6,7 +6,7 @@ class Journals {
     private $currentDate;
     private $entry;
 
-    public function __construct($currentDate, $entry) {
+    public function __construct($entry) {
         $this->currentDate = $this->getcurrentDate();
         $this->entry = $entry;
     }
@@ -17,17 +17,7 @@ class Journals {
 
     public function getcurrentDate() {
         date_default_timezone_set('America/Los_Angeles');
-        return "Date: " . date("F-d-Y") . "<br>";
+        return date("F-d-Y");
     }
-
-    // public function addEntry() {
-    //     return $this->entry;   
-    // }
     
-    // public function getFullEntry() {
-    //     return [
-    //         'date' => $this->currentDate,
-    //         'entry' => $this->entry
-    //     ];
-    // }
 }
